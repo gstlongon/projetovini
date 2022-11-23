@@ -321,7 +321,7 @@
 }
 
 .question__select-box.active .question__select-info {
-    max-height: 145px;
+    max-height: 175px;
     transition-timing-function: ease-in;
     opacity: 1;
 }
