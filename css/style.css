@@ -43,6 +43,7 @@
 .header { 
     width: 100%;
     height: 100px;
+    padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,14 +59,105 @@
     width: 100%;
 }
 
-.header__right {
-    width: 100%;
-    max-width: 90px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
+.header__menu {
+    margin-left: 30px;
+    background-color: transparent;
+    border: none;
 }
 
+.header__right {
+    width: 100%;
+    max-width: 485px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* ================NAV=========================== */
+
+nav {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+  }
+  
+  nav ul li {
+
+    text-align: right;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 30px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #FFF;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+
+  .icon-menu { margin-left: 30px;}
+  
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    right: -20rem;
+    transition: 0.2s;
+  }
+  
+  nav .menu ul {
+    display: none;
+  }
+  
+  nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: #2A2A2A;
+    height: 100vh;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 0 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  nav.show .menu ul {
+    display: block;
+  }
+  
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+  
+  .toggle {
+    cursor: pointer;
+  }
+  
+  
 /* ===================INDEX======================= */
 
 .index__banner-img {
@@ -373,6 +465,7 @@
     background-color: #2A2A2A;
     color: #FFF;
     padding: 30px;
+    border-top: 3px solid rgba(0, 0, 0, 0.25);
 }
 
 .footer__logo {
@@ -413,6 +506,105 @@
     text-align: center;
     margin-top: 40px;
 }
+
+/* ==================ACTING-PAGE==================== */
+.acting-page__body {
+    background-color: #2A2A2A;
+}
+.acting-page__image {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.acting-page__img {
+    width: 100%;
+    height: auto;
+}
+
+.acting-page__title {
+    color: #FFF;
+    position: absolute;
+    font-size: 36px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.acting-page__select-box {
+    width: 100%;
+    height: auto;
+}
+
+.acting-page__select {
+    width: 100%;
+    max-width: 350px;
+    height: 62px;
+    padding: 0 12px;
+    color: #FFF;
+    margin: 0px auto;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid #FAFAFA0D;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.acting-page__label {
+    display: flex;
+    align-items: center;
+}
+
+.acting-page__label-icon {
+    margin-right: 20px;
+}
+
+.acting-page__select-info {
+    max-height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    max-width: 350px;
+    background: rgba(237, 237, 237, 0.04);
+    color: #EDEDED;
+    display: block;
+    font-size: 18px;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.acting-page__select-info ul,
+.acting-page__select-info ul li
+ {
+    padding: 10px;
+}
+
+
+.acting-page__select-svg {
+    transition: .3s;
+}
+
+.acting-page__select-box.active .acting-page__select-info {
+    max-height: 450px;
+    transition-timing-function: ease-in;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.acting-page__select-box.active .acting-page__select-svg {
+    transform: rotate(180deg);
+}
+
+.acting-page__select-info a {
+    margin-bottom: 30px;
+}
+
+
 
 
 
