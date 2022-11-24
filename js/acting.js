@@ -24,3 +24,18 @@ function actingShow() {
   }
 
   actingShow()
+
+  const backToTopButton = document.querySelector('.back-to-top')
+
+
+  function backToTop() {
+    if (window.scrollY >= 260) {
+      backToTopButton.classList.add('show')
+    } else {
+      backToTopButton.classList.remove('show')
+    }
+  }
+  
+  window.addEventListener('scroll', function () {
+      backToTop()
+    })
