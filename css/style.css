@@ -6,6 +6,41 @@
     scroll-behavior: smooth;
 }
 
+.ui__preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #2A2A2A;
+    z-index: 999999;
+}
+
+.ui__preloader-icon {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    border: 2px solid #B49877;
+    border-left-color: transparent;
+    border-radius: 50%;
+    animation: rotate 1s infinite;
+}
+
+.ui__preloader-logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 175px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .ui-btn {
     display: flex;
     align-items: center;
@@ -67,7 +102,6 @@
 
 .header__right {
     width: 100%;
-    max-width: 485px;
     height: auto;
     display: flex;
     align-items: center;
@@ -77,11 +111,12 @@
 /* ================NAV=========================== */
 
 nav {
+    width: 100%;
     height: auto;
+    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 100%;
   }
   
   nav ul li {
@@ -99,32 +134,26 @@ nav {
   }
   
   nav ul li a:hover,
-  nav ul li a.active {
+  nav ul li a.show{
     color: #FFF;
   }
-  
-  nav ul li a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #FFF;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: width 0.2s;
-  }
-  
-  nav ul li a:hover::after,
-  nav ul li a.active::after {
-    width: 100%;
-  }
 
-  .icon-menu { margin-left: 30px;}
+  .header__search {
+    display: block;
+    margin-left: auto;
+  }
+  
+  .icon-menu { 
+    display: block;
+    width: 30px;
+    height: auto;
+    margin-left: 30px;
+}
   
   nav .menu {
+    position: absolute;
     opacity: 0;
     visibility: hidden;
-    right: -20rem;
     transition: 0.2s;
   }
   
@@ -149,9 +178,6 @@ nav {
     display: block;
   }
   
-  nav.show ul.grid {
-    gap: 4rem;
-  }
   
   .toggle {
     cursor: pointer;

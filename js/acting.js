@@ -1,3 +1,9 @@
+const loader = document.querySelector('.ui__preloader')
+window.addEventListener('load', () => {
+    loader.style.display = "none"
+}
+)
+
 const nav = document.querySelector('.nav__menu')
 const toggle = document.querySelectorAll('nav .toggle')
 
