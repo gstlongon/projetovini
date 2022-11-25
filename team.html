@@ -4,27 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-     <!-- Swiper -->
-     <link
-     rel="stylesheet"
-     href="https://unpkg.com/swiper/swiper-bundle.min.css"
-   />
-   <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <title>AM Advogados - Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>AM Advogados - Equipe</title>
 </head>
-<!-- preloader -->
-<div class="ui__preloader">
-    <div class="ui__preloader-icon"></div>
-    <img class="ui__preloader-logo" src="./svg/logo.svg" alt="">
-</div>
-<body>
+<body class="team-page__body">
     <header class="header">
         <div class="header__left">
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="index.html">
             <img src="./svg/logo.svg" alt="">
             </a>
         </div>
@@ -33,7 +19,7 @@
                 <div class="menu">
                 <ul class="">
                     <li><a class="title" href="#">O Escritório</a></li>
-                    <li><a class="title" href="team.html">A Equipe</a></li>
+                    <li><a class="title" href="#">A Equipe</a></li>
                     <li><a class="title" href="acting.html">Áreas de Atuação</a></li>
                     <li><a class="title" href="#">Contato</a></li>
                 </ul>
@@ -51,204 +37,53 @@
             </nav>
         </div>
     </header>
-    <section class="index">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="index__banner-img" src="./img/banner-index-1.png" alt="Homem de terno" loading="lazy">
-                    <div class="index__banner-info">
-                        <div class="index__banner-detail">
-                            <h3 class="index__banner-title">REPRESENTAÇÃO E<br> CONSULTORIA JURÍDICA</h3>
-                            <p class="index__banner-text">Conte com a nossa equipe especializada nas mais diversas áreas da advocacia</p>
-                            <a class="ui-btn" href="#">Veja mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img class="index__banner-img" src="./img/banner-index-2.png" alt="Homem em um atendimento via video chamada" loading="lazy">
-                    <div class="index__banner-info">
-                        <div class="index__banner-detail">
-                            <h3 class="index__banner-title ">FLEXIBILIDADE</h3>
-                            <p class="index__banner-text">Atendimento online ou presencial, nos ajustamos às suas necessidades!</p>
-                            <a class="ui-btn" href="#">Veja mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img class="index__banner-img" src="./img/banner-index-3.png" alt="Nosso Escritório" loading="lazy">
-                    <div class="index__banner-info">
-                        <div class="index__banner-detail">
-                            <h3 class="index__banner-title">O ESCRITÓRIO</h3>
-                            <p class="index__banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            <a class="ui-btn" href="#">Veja mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div id="swiper-pagination" class="swiper-pagination"></div>
-          </div>
-    </section>
-    <section class="acting">
-        <div class="acting__title">
-            <h3>ÁREAS DE ATUAÇÃO</h3>
-        </div>
-        <div class="swiper-acting">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="82" height="83" viewBox="0 0 82 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M59.4845 16.5781V17.0781H59.9845H77.5151C78.496 17.0793 79.4376 17.4738 80.1329 18.1768C80.8284 18.8799 81.2206 19.8343 81.2219 20.831V78.176C81.2206 79.1726 80.8284 80.127 80.1329 80.8301C79.4375 81.533 78.496 81.9275 77.5151 81.9288H4.49247C3.51151 81.9275 2.56998 81.533 1.87466 80.8301C1.17924 80.1271 0.786999 79.1729 0.785645 78.1763V20.8307C0.786955 19.8341 1.17918 18.8798 1.87461 18.1768C2.56993 17.4738 3.51148 17.0793 4.49247 17.0781H21.9836H22.4836V16.5781V0.643066H59.4845V16.5781ZM27.4179 5.13679H26.9179V5.63679V16.5781V17.0781H27.4179H54.5502H55.0502V16.5781V5.63679V5.13679H54.5502H27.4179ZM76.5267 22.3358V21.8358H76.0267H5.98083H5.48083V22.3358V36.1192V36.3248L5.62536 36.4709L14.656 45.6001L14.8028 45.7484H15.0115H38.1562H38.6562V45.2484V37.7257H43.3514V45.2484V45.7484H43.8514H66.996H67.2047L67.3515 45.6001L76.3822 36.4709L76.5267 36.3248V36.1192V22.3358ZM5.48083 76.6714V77.1714H5.98083H76.0267H76.5267V76.6714V44.2615V43.045L75.6712 43.9098L69.1463 50.5062H43.8514H43.3514V51.0062V58.6148H38.6562V51.0062V50.5062H38.1562H12.8612L6.3363 43.9098L5.48083 43.045V44.2615V76.6714Z" fill="#B49877" stroke="#2A2A2A"/>
-                        </svg>
-                        <h3 class="acting__card-title">TRABALHISTA</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M78.3722 53.3883L78.3725 53.3885C80.119 54.5296 81.5527 56.0891 82.5433 57.9253C83.5338 59.7614 84.0498 61.816 84.0444 63.9023V63.9036V78.4356H66.7612V73.81H78.9188H79.4188V73.31L79.4188 63.9055C79.4188 63.9051 79.4188 63.9047 79.4188 63.9043C79.4231 62.5863 79.098 61.288 78.4731 60.1275C77.8481 58.9666 76.9428 57.9804 75.8396 57.2584L75.8395 57.2584L60.5693 47.2665L67.1897 35.1286L67.1899 35.1287L67.1951 35.1186C67.8336 33.8817 68.167 32.5101 68.1676 31.1182V31.1179L68.1676 18.4613C68.1676 18.461 68.1676 18.4607 68.1676 18.4603C68.1725 15.9004 67.4303 13.3946 66.0322 11.2502C64.6338 9.10546 62.6401 7.41539 60.2953 6.38716C57.9505 5.35894 55.3567 5.03725 52.8318 5.46154C50.4714 5.8582 48.2671 6.89069 46.454 8.44365L43.3081 5.04769C45.7814 2.88064 48.8104 1.43999 52.0592 0.891013C55.4725 0.31425 58.9799 0.746832 62.1508 2.13564C65.3217 3.52445 68.0179 5.80903 69.9085 8.70883C71.7991 11.6086 72.8017 14.9974 72.7932 18.4591V18.4603V31.1173C72.7904 33.2886 72.2604 35.4268 71.2488 37.348C71.2483 37.3491 71.2477 37.3501 71.2472 37.3512L66.8953 45.3293L66.6743 45.7344L67.0605 45.9871L78.3722 53.3883Z" fill="#AC9173" stroke="#2A2A2A"/>
-                            <path d="M53.0558 59.014L53.0561 59.0142C54.8026 60.1553 56.2363 61.7148 57.2269 63.551C58.2174 65.3871 58.7334 67.4417 58.728 69.528V69.5293V84.0613H0.645751L0.730728 69.5157L0.730722 69.512C0.727235 67.4284 1.2441 65.3769 2.23442 63.5437C3.22474 61.7105 4.65716 60.1535 6.40168 59.0142L6.40207 59.014L17.6478 51.6548L18.034 51.4021L17.813 50.997L13.4374 42.9754C13.4369 42.9743 13.4363 42.9733 13.4358 42.9723C12.4239 41.0536 11.9 38.9152 11.9104 36.7461V36.7437V24.0861C11.9104 14.2672 19.8847 6.2795 29.6839 6.2793C34.403 6.2866 38.9266 8.16544 42.2622 11.5037C45.5979 14.842 47.4733 19.3672 47.4768 24.0864V36.743C47.474 38.9144 46.944 41.0525 45.9324 42.9738C45.9319 42.9748 45.9313 42.9758 45.9308 42.9769L41.5791 50.955L41.3581 51.3602L41.7443 51.6128L53.0558 59.014ZM53.6024 79.4357H54.1024V78.9357L54.1024 69.5312C54.1024 69.5308 54.1024 69.5304 54.1024 69.5301C54.1067 68.212 53.7816 66.9137 53.1567 65.7532C52.5316 64.5923 51.6264 63.6061 50.5231 62.8841L50.5231 62.8841L35.2529 52.8922L41.8733 40.7544L41.8734 40.7544L41.8787 40.7443C42.5172 39.5074 42.8506 38.1358 42.8512 36.7439V36.7437V24.0861C42.8512 20.5964 41.4649 17.2498 38.9974 14.7822C36.5299 12.3147 33.1832 10.9285 29.6936 10.9285C26.204 10.9285 22.8573 12.3147 20.3897 14.7822C17.9222 17.2498 16.536 20.5964 16.536 24.0861V36.7427C16.5307 38.1326 16.8572 39.5036 17.4883 40.742L17.4881 40.7421L17.4948 40.7544L24.139 52.9351L8.93488 62.8839L9.20865 63.3023L8.93487 62.8839C7.83163 63.6059 6.92632 64.5921 6.30123 65.753C5.6765 66.9132 5.35147 68.2111 5.35562 69.5287C5.35562 69.5295 5.35562 69.5303 5.35562 69.531L5.30113 78.9328L5.29822 79.4357H5.80112H53.6024Z" fill="#AC9173" stroke="#2A2A2A"/>
-                        </svg>
-                            
-                        <h3 class="acting__card-title">FAMÍLIA</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M74.1965 78.9163V79.4163H74.6965H84.0433V84.043H0.642822V79.4163H9.98954H10.4895V78.9163V0.642578H74.1965V78.9163ZM69.0699 79.4163H69.5699V78.9163V5.76928V5.26928H69.0699H15.6162H15.1162V5.76928V78.9163V79.4163H15.6162H39.5297H40.0297V78.9163V68.1629H44.6564V78.9163V79.4163H45.1564H69.0699Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M25.9639 55.9094V51.2827H30.5906V55.9094H25.9639Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M40.031 55.9094V51.2827H44.6577V55.9094H40.031Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M54.0967 55.9094V51.2827H58.7234V55.9094H54.0967Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M25.9639 39.0295V34.4028H30.5906V39.0295H25.9639Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M40.031 39.0295V34.4028H44.6577V39.0295H40.031Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M54.0967 39.0295V34.4028H58.7234V39.0295H54.0967Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M25.9639 22.1496V17.5229H30.5906V22.1496H25.9639Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M40.031 22.1496V17.5229H44.6577V22.1496H40.031Z" fill="#B49877" stroke="#2A2A2A"/>
-                            <path d="M54.0967 22.1496V17.5229H58.7234V22.1496H54.0967Z" fill="#B49877" stroke="#2A2A2A"/>
-                        </svg>
-                        <h3 class="acting__card-title">IMOBILIÁRIO</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="85" height="70" viewBox="0 0 85 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M83.2954 26.1573L83.2973 26.1597C83.6479 26.6059 83.8913 27.1265 84.009 27.6815C84.1267 28.2366 84.1155 28.8112 83.9762 29.3612L83.9758 29.3627L74.1308 68.7429H0.785645V4.93529C0.786823 3.98662 1.1642 3.07713 1.83502 2.40631C2.50584 1.73549 3.41534 1.35811 4.36402 1.35694L33.642 1.35694L33.6429 1.35694C34.3493 1.35569 35.0401 1.56417 35.6279 1.95596C36.2156 2.34774 36.6739 2.9052 36.9445 3.55767L36.9448 3.55837L40.0807 11.0875L40.2089 11.3952H40.5423H64.5924C65.5412 11.3963 66.4509 11.7737 67.1218 12.4446C67.7927 13.1155 68.1701 14.0251 68.1712 14.9739V24.222V24.722H68.6712L80.3525 24.722L80.354 24.722C80.9214 24.7202 81.4817 24.8487 81.9916 25.0975C82.5016 25.3464 82.9476 25.7089 83.2954 26.1573ZM5.43218 63.5963V64.0963H5.93218H8.59011H8.98051L9.07519 63.7176L18.1162 27.551L18.1163 27.5504C18.3175 26.742 18.7836 26.0242 19.4403 25.5115C20.097 24.9988 20.9064 24.7209 21.7395 24.722H21.7402H63.025H63.525V24.222V16.5418V16.0418H63.025H37.1117L33.0579 6.31119L32.9297 6.00348H32.5964H5.93218H5.43218V6.50348V63.5963ZM62.525 24.222H21.7402L62.525 16.5418H63.025V17.0418V23.722V24.222H62.525ZM70.1127 64.0963H70.5031L70.5977 63.7176L79.0296 29.9898L79.1849 29.3685H78.5445H22.8423H22.4519L22.3573 29.7472L13.9254 63.4751L13.7701 64.0963H14.4105H70.1127Z" fill="#B49877" stroke="#2A2A2A"/>
-                        </svg>
-                            
-                        <h3 class="acting__card-title">PREVIDENCIÁRIO</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="101" height="92" viewBox="0 0 101 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M65.4166 24.7576V24.5505L65.2701 24.404L45.8845 5.01837L45.738 4.87192H45.5309H45.3066H44.8066V5.37192V24.9819V25.4819H45.3066H64.9166H65.4166V24.9819V24.7576ZM5.58652 73.3533V73.8533H6.08652H64.9166H65.4166V73.3533V30.2113V29.7113H64.9166H40.5772V5.37192V4.87192H40.0772H6.08652H5.58652V5.37192V73.3533ZM69.6459 22.7988V78.0827H1.35718V0.642578H47.4898L69.6459 22.7988Z" fill="#AC9173" stroke="#2A2A2A"/>
-                            <path d="M15.7368 50.6288V46.3994H51.3422V50.6288H15.7368Z" fill="#AC9173" stroke="#2A2A2A"/>
-                            <path d="M15.7368 63.702V59.4727H51.3422V63.702H15.7368Z" fill="#AC9173" stroke="#2A2A2A"/>
-                            <path d="M52.4547 87.5311L54.6596 73.426L61.4376 57.8571L66.4758 49.9762L79.5161 58.3532L71.8855 70.6625L66.6835 77.9165L60.7446 83.8898L52.0843 88.1638L52.4547 87.5311Z" fill="#2A2A2A" stroke="#2A2A2A"/>
-                            <path d="M50.7893 87.766C50.752 88.2609 50.855 88.7563 51.0864 89.1954C51.3179 89.6345 51.6684 89.9995 52.0978 90.2485L52.109 90.2551C52.4088 90.4321 52.7406 90.5481 53.0853 90.5964C53.4301 90.6447 53.7809 90.6243 54.1178 90.5365C54.4011 90.4622 54.6703 90.3419 54.9147 90.1804C63.6613 84.3988 70.9686 76.6918 76.2767 67.65L88.9188 46.0535C89.5491 44.9832 89.962 43.799 90.1339 42.5688C90.3058 41.3386 90.2334 40.0866 89.9206 38.8845C89.6079 37.6824 89.0611 36.5537 88.3115 35.5633C87.5619 34.5728 86.6243 33.74 85.5523 33.1124C84.4804 32.4849 83.2951 32.075 82.0645 31.9063C80.8339 31.7376 79.582 31.8133 78.3807 32.1291C77.1794 32.4449 76.0522 32.9946 75.0637 33.7468C74.0752 34.4989 73.2447 35.4387 72.62 36.5123L71.8959 37.7492L69.1985 36.1702C67.9722 35.4524 66.5111 35.2511 65.1364 35.6106C63.7617 35.9701 62.5862 36.8609 61.8683 38.0871L51.686 55.4811L54.6215 57.1996L64.8039 39.8056C65.066 39.358 65.4952 39.0328 65.997 38.9016C66.4988 38.7704 67.0322 38.8438 67.4799 39.1058L70.1774 40.6848L59.9774 58.1089C54.6918 67.1639 51.5488 77.3087 50.7893 87.766ZM75.5561 38.2307C75.9569 37.546 76.4887 36.9469 77.121 36.4678C77.7533 35.9886 78.4738 35.6386 79.2414 35.4379C80.0089 35.2372 80.8085 35.1896 81.5945 35.2979C82.3804 35.4062 83.1373 35.6682 83.822 36.069C84.5067 36.4698 85.1057 37.0016 85.5849 37.6339C86.0641 38.2662 86.414 38.9867 86.6148 39.7543C86.8155 40.5218 86.8631 41.3214 86.7548 42.1073C86.6465 42.8933 86.3845 43.6502 85.9837 44.3349L79.1868 55.9457L68.7593 49.8414L75.5561 38.2307ZM67.0403 52.7772L77.4677 58.8813L73.3405 65.9317C68.5577 74.0777 62.0648 81.0893 54.3096 86.4827C55.216 77.08 58.1513 67.9858 62.9131 59.8275L67.0403 52.7772Z" fill="#AC9173" stroke="#2A2A2A"/>
-                        </svg>
-                        <h3 class="acting__card-title">TRABALHISTA</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="acting__card">
-                        <svg class="acting__card-icon" width="85" height="80" viewBox="0 0 85 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M67.0861 20.8043V21.0616L67.2955 21.2111L83.9469 33.1041V78.7551H0.642822V33.1041L17.2942 21.2111L17.5036 21.0616V20.8043V4.08453C17.5045 3.28565 17.8223 2.51975 18.3872 1.95486C18.952 1.39003 19.7178 1.07228 20.5166 1.07129H64.0731C64.8719 1.07228 65.6377 1.39003 66.2025 1.95486C66.7674 2.51975 67.0851 3.28565 67.0861 4.08453V20.8043ZM77.2875 34.8637L77.8997 34.4635L77.3045 34.0383L67.8767 27.3033L67.0861 26.7385V27.7102V40.6087V41.5329L67.8597 41.0272L77.2875 34.8637ZM22.6239 5.69156H22.1239V6.19156V43.5005V43.7819L22.3644 43.9279L34.5695 51.338L34.8018 51.479L35.0464 51.3609L43.7369 47.1655L51.6954 51.2922L51.9547 51.4266L52.1992 51.2668L62.2394 44.7019L62.4658 44.5539V44.2835V6.19156V5.69156H61.9658H22.6239ZM43.8851 52.4468L43.6629 52.3316L43.4376 52.4404L5.54572 70.7332L5.26309 70.8696V71.1835V73.6348V74.1348H5.76309H78.8266H79.3266V73.6348V71.128V70.824L79.0568 70.6841L43.8851 52.4468ZM6.02259 39.4111L5.26309 38.95V39.8385V64.9425V65.7391L5.98046 65.3928L29.0137 54.2736L29.8425 53.8735L29.0559 53.3959L6.02259 39.4111ZM57.3797 53.4005L56.6633 53.8689L57.4231 54.2628L78.5965 65.241L79.3266 65.6195V64.7971V39.9741V39.0498L78.553 39.5556L57.3797 53.4005ZM17.5036 27.7102V26.7386L16.713 27.3033L7.34578 33.994L6.72878 34.4348L7.37689 34.8283L16.7441 40.5162L17.5036 40.9774V40.0888V27.7102Z" fill="#B49877" stroke="#2A2A2A"/>
-                        </svg>
-                            
-                        <h3 class="acting__card-title">SUCESSÕES</h3>
-                        <p class="acting__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <a class="ui-btn" href="#">Saiba mais</a>
-    </section>
-    <section class="team">
-        <div class="team__title">
-            <h3>EQUIPE ESPECIALIZADA</h3>
-        </div>
-        <p class="team__text">
-            A Advocacia Marília trabalha com profissionais capacitados e especializados para atender as mais diversas demandas.<br><br>
-            Encontre o profissional certo para você!
+    <div class="team-page__image">
+        <img class="team-page__img" src="./img/team-img.png" alt="Foto da equipe">
+        <h1 class="team-page__title">EQUIPE</h1>
+    </div>
+    <div class="">
+        <p class="team-page__text">
+            A nossa equipe é multidisciplinar, especializada nas mais diversas áreas do Direto. Estamos prontos para atendê-los seja qual for o seu problema.
         </p>
-        <img class="team__img" src="./img/team-img.png" alt="Imagem da equipe">
-        <a class="ui-btn-black" href="#">Conheça nossa equipe</a>
-    </section>
-    <section class="question">
-        <div class="question__title">
-            <h3>PERGUNTAS FREQUENTES</h3>
+        <p class="team-page__text">
+            Conheça abaixo todos os profissionais que fazem parte da Advocacia Marília.
+        </p>
+    </div>
+    <div class="team-page__filter">
+        <button class="team-page__filter-btn">Todas as áreas de atuação</button>
+        <button class="team-page__filter-btn">Trabalhista</button>
+        <button class="team-page__filter-btn">Família</button>
+        <button class="team-page__filter-btn">Imobiliário</button>
+        <button class="team-page__filter-btn">Previdenciário</button>
+        <button class="team-page__filter-btn">Civil</button>
+        <button class="team-page__filter-btn">Sucessões</button>
+    </div>
+    <div class="team-page__card-box">
+        <div class="team-page__card">
+            <img class="team-page__card-img" src="./img/advogado-rogerio.png" alt="Foto Advogado Rogério Ortega">
+            <div class="team-page__card-name">Rogério Ortega</div>
+            <div class="team-page__card-register">OAB 123450</div>
+            <div class="team-page__card-info">Advogado especialista em direito trabalhista e imobiliário, atuante na ...</div>
         </div>
-        <div class="question__select-box">
-            <div class="question__select">
-                <span class="question__select-text">Vocês atendem online?</span>
-                <div class="question__select-icon">
-                    <svg class="question__select-svg" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5405 2L12.5045 12L1.46846 2" stroke="#2A2A2A" stroke-width="4"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="question__select-info">
-                <p class="question__select-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a class="ui-btn-black" href="#">Entre em contato</a>
-            </div>
+        <div class="team-page__card">
+            <img class="team-page__card-img" src="./img/advogado-rogerio.png" alt="Foto Advogado Rogério Ortega">
+            <div class="team-page__card-name">Rogério Ortega</div>
+            <div class="team-page__card-register">OAB 123450</div>
+            <div class="team-page__card-info">Advogado especialista em direito trabalhista e imobiliário, atuante na ...</div>
         </div>
-        <div class="question__select-box">
-            <div class="question__select">
-                <span class="question__select-text">Quais áreas vocês atendem?</span>
-                <div class="question__select-icon">
-                    <svg class="question__select-svg" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5405 2L12.5045 12L1.46846 2" stroke="#2A2A2A" stroke-width="4"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="question__select-info">
-                <p class="question__select-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a class="ui-btn-black" href="#">Entre em contato</a>
-            </div>
+        <div class="team-page__card">
+            <img class="team-page__card-img" src="./img/advogado-rogerio.png" alt="Foto Advogado Rogério Ortega">
+            <div class="team-page__card-name">Rogério Ortega</div>
+            <div class="team-page__card-register">OAB 123450</div>
+            <div class="team-page__card-info">Advogado especialista em direito trabalhista e imobiliário, atuante na ...</div>
         </div>
-        <div class="question__select-box">
-            <div class="question__select">
-                <span class="question__select-text">Vocês tem serviço de consultoria?</span>
-                <div class="question__select-icon">
-                    <svg class="question__select-svg" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5405 2L12.5045 12L1.46846 2" stroke="#2A2A2A" stroke-width="4"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="question__select-info">
-                <p class="question__select-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a class="ui-btn-black" href="#">Entre em contato</a>
-            </div>
+        <div class="team-page__card">
+            <img class="team-page__card-img" src="./img/advogado-rogerio.png" alt="Foto Advogado Rogério Ortega">
+            <div class="team-page__card-name">Rogério Ortega</div>
+            <div class="team-page__card-register">OAB 123450</div>
+            <div class="team-page__card-info">Advogado especialista em direito trabalhista e imobiliário, atuante na ...</div>
         </div>
-        <div class="question__select-box">
-            <div class="question__select">
-                <span class="question__select-text">Como eu entro em contato?</span>
-                <div class="question__select-icon">
-                    <svg class="question__select-svg" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5405 2L12.5045 12L1.46846 2" stroke="#2A2A2A" stroke-width="4"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="question__select-info">
-                <p class="question__select-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a class="ui-btn-black" href="#">Entre em contato</a>
-            </div>
-        </div>
-        <p class="question__doubt">Ainda com dúvidas? Será um prazer atendê-lo!</p>
-        <a class="ui-btn-black" href="#">Entre em contato</a>
-    </section>
-  
+    </div>
     <footer class="footer">
         <a class="back-to-top" href="#">
             <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,8 +122,6 @@
             2022 Marília Advogados. Todos os direitos reservados.
         </div>
     </footer>
-      <!-- swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/team.js"></script>
 </body>
 </html>
